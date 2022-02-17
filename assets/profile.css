@@ -104,6 +104,50 @@ nav .img-profile{
   width: 250px;
   height: 50px;
 }
+footer{
+  background-color: #F9F9FB;
+  text-align: center;
+  font-family: 'Mulish', sans-serif;
+  color: #848484;
+}
+footer .row .col-12 img{
+  padding-top: 90px;
+  padding-bottom: 20px;
+}
+footer .row .col-12 .about{
+  font-size: 18px;
+  font-weight: 300px;
+  width: 100%;
+  margin: 0 auto;
+}
+footer .row .col-12{
+  font-size: 18px;
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+footer .row .col-12 h5{
+  font-size: 19px;
+  font-weight: 700;
+  color: black;
+  padding-top: 30px;
+}
+footer .row .col-12 a{
+  text-decoration: none;
+  color: #848484;
+  display: block;
+}
+footer .socmeds{
+  margin-top: 74px;
+  border-top: 1px solid #C4C4C4;
+  height: 84px;
+  font-size: 18px;
+  line-height: 84px;
+  text-align: center;
+}
+footer .socmeds a{
+  padding: 12px;
+  color: black;
+}
 
 @media(min-width: 768px){
   .profile .user .user-name{
@@ -114,6 +158,18 @@ nav .img-profile{
     font-size: 20px;
     line-height: 5px;
     margin-bottom: 110px;
+  }
+  footer .row .col-12 img{
+    padding-bottom: 25px;
+  }
+  footer .row .col-12 .about{
+    width: 300px;
+  }
+  footer .socmeds{
+    font-size: 24px;
+  }
+  footer .socmeds a{
+    padding: 17.5px;
   }
 }
 
@@ -126,5 +182,32 @@ nav .img-profile{
     font-size: 24px;
     line-height: 10px;
     margin-bottom: 134px;
+  }
+  footer{
+    padding: 76px 109px 0 109px;
+    text-align: left;
+    width: 100%;
+  }
+  footer .row .col-12{
+    padding-top: 0;
+    margin-top: 0;
+    margin-right: 2%;
+  }
+  footer .row .col-12 img{
+    padding-top: 0;
+    padding-bottom: 40px;
+    text-align: left;
+  }
+  footer .row .col-12 .about{
+    margin-left:0;
+    text-align: justify;
+    width: 300px;
+  }
+  footer .row .space{
+    width: 50px;
+  }
+  footer .copyright{
+    position: relative;
+    bottom: 30px;
   }
 }
