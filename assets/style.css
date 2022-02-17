@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap');
 
 li{
     list-style: none;
@@ -10,6 +11,7 @@ body{
 .navbar{
   position: sticky;
   top:0;
+  z-index: 999;
   padding: 10px 20px;
   width:100%;
   font-size: 16px;
@@ -139,6 +141,7 @@ nav .collapse ul li .login:active{
   top:-15%;
   left: 50%;
   transform: translate(-50%, 15%);
+  z-index: 990;
 }
 .bottom-wrapper .popular-section .circle{
   width: 100px;
@@ -157,6 +160,84 @@ nav .collapse ul li .login:active{
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+}
+.testimonial-section h2{
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 59px;
+}
+.testimonial-section .testimony .star{
+  color: orange;
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+.testimonial-section .testimony{
+  width: 250px;
+  margin: 0 auto;
+  text-align: justify;
+}
+.testimonial-section .testimony h5{
+  font-size: 20px;
+}
+.testimonial-section .testimony h6{
+  text-align: center;
+  padding-top: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.testimonial-section .testimony p{
+  text-align: center;
+  font-size: 18px;
+}
+.testimonial-section .testimony .message .user-image{
+  width: 250px;
+}
+footer{
+  background-color: #F9F9FB;
+  text-align: center;
+  font-family: 'Mulish', sans-serif;
+  color: #848484;
+}
+footer .row .col-12 img{
+  padding-top: 90px;
+  padding-bottom: 20px;
+}
+footer .row .col-12 .about{
+  font-size: 18px;
+  font-weight: 300px;
+  width: 100%;
+  margin: 0 auto;
+}
+footer .row .col-12{
+  font-size: 18px;
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+footer .row .col-12 h5{
+  font-size: 19px;
+  font-weight: 700;
+  color: black;
+  padding-top: 30px;
+}
+footer .row .col-12 a{
+  text-decoration: none;
+  color: #848484;
+  display: block;
+}
+footer .socmeds{
+  margin-top: 74px;
+  border-top: 1px solid #C4C4C4;
+  height: 84px;
+  font-size: 18px;
+  line-height: 84px;
+  text-align: center;
+}
+footer .socmeds a{
+  padding: 12px;
+  color: black;
 }
 
 @media (min-width: 768px){
@@ -200,6 +281,55 @@ nav .collapse ul li .login:active{
   .bottom-wrapper .popular-section h2{
     text-align: left;
   }
+  .testimonial-section{
+    padding: 50px;
+  }
+  .testimonial-section h2{
+    text-align:left;
+  }
+  .testimonial-section .testimony h5{
+    font-size: 24px;
+  }
+  .testimonial-section .testimony h6{
+    padding-top: 40px;
+    font-size: 22px;
+    line-height: 35px;
+  }
+  .testimonial-section .testimony{
+    width: 100%;
+  }
+  .testimonial-section .testimony .star{
+    text-align: left;
+  }
+  .testimonial-section .testimony .message{
+    display: flex;
+  }
+  .testimonial-section .testimony .message .user-testimony{
+    width: 40%;
+    position: relative;
+    justify-items: center;
+  }
+  .testimonial-section .testimony .message .user{
+    padding-top: 0;
+    margin-top: 0;
+    width: 60%;
+  }
+  .testimonial-section .testimony .message .user .user-image{
+    width: 80%;
+    margin: 10%;
+  }
+  footer .row .col-12 img{
+    padding-bottom: 25px;
+  }
+  footer .row .col-12 .about{
+    width: 300px;
+  }
+  footer .socmeds{
+    font-size: 24px;
+  }
+  footer .socmeds a{
+    padding: 17.5px;
+  }
 }
 
 @media (min-width: 992px){
@@ -237,5 +367,41 @@ nav .collapse ul li .login:active{
   .bottom-wrapper .popular-section .circle{
     top: -60%;
     right: -80%;
+  }
+  .testimonial-section{
+    padding: 144px;
+  }
+  .testimonial-section .testimony{
+    width: 100%;
+  }
+  .testimonial-section .testimony h6, .testimonial-section .testimony p{
+    text-align: left;
+  }
+  footer{
+    padding: 76px 109px 0 109px;
+    text-align: left;
+    width: 100%;
+  }
+  footer .row .col-12{
+    padding-top: 0;
+    margin-top: 0;
+    margin-right: 2%;
+  }
+  footer .row .col-12 img{
+    padding-top: 0;
+    padding-bottom: 40px;
+    text-align: left;
+  }
+  footer .row .col-12 .about{
+    margin-left:0;
+    text-align: justify;
+    width: 300px;
+  }
+  footer .row .space{
+    width: 50px;
+  }
+  footer .copyright{
+    position: relative;
+    bottom: 30px;
   }
 }
