@@ -8,7 +8,7 @@ This is repository of Responsive Website task for Fazztrack Bootcamp
 ### Tablet
 ![Screenshot (159)](https://user-images.githubusercontent.com/90091968/154664289-e801436b-e323-47aa-bbbe-950b1e1223ac.png)
 ### Mobile
-![Screenshot (160)](https://user-images.githubusercontent.com/90091968/154664344-6fac1218-6bf2-4f9c-9019-ebe46feaa596.png)
+![Screenshot (162)](https://user-images.githubusercontent.com/90091968/154665032-7181017f-28e4-43c8-ae1b-ba05f6e0735a.png)
 
 # Author
 [Jumelisah](https://github.com/jumelisah)
