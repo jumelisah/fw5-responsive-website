@@ -4,6 +4,9 @@
 li{
   list-style: none;
 }
+a{
+  text-decoration: none;
+}
 body{
 font-family: 'Nunito', sans-serif;
 }
@@ -35,7 +38,7 @@ nav .messages{
 
 }
 nav .messages .msg-sum{
-  background-color: #E3BEC6;
+  background-color: #9AD0EC;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -66,6 +69,7 @@ section form input{
   border: 0.8px solid #AFB0B9;
   border-radius: 6px;
   padding: 20px 46px;
+  outline: none;
 }
 section form button{
   right: 21px;
@@ -73,12 +77,18 @@ section form button{
   transform: translateY(-50%);
   background-color: rgba(255, 255, 255, 0);
   border: none;
-  font-size: 30px;
+  font-size: 24px;
 }
 section .popular-section h1{
   font-family: 'Playfair Display', serif;
   line-height: 50px;
   font-size: 36px;
+}
+.other-vehicles a{
+  color: #1572A1;
+}
+.other-vehicles a:hover{
+  color: #9AD0EC;
 }
 .popular-section .vehicles{
   margin: 55px 0 85px 0;
@@ -106,6 +116,12 @@ section .popular-section h1{
 }
 .popular-section .vehicles .location p{
   font-size: 15px;
+}
+.popular-section .other-vehicles{
+  line-height: 60px;
+}
+.popular-section .other-vehicles .fa-angle-right{
+  padding-left: 11px;
 }
 
 footer{
@@ -224,6 +240,9 @@ footer .socmeds a{
   }
   section form input{
     height: 72px;
+  }
+  section form button{
+    font-size: 30px;
   }
   .popular-section .vehicles .popular-vehicle{
     width:25%;
