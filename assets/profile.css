@@ -139,44 +139,45 @@ footer{
   background-color: #F9F9FB;
   text-align: center;
   font-family: 'Mulish', sans-serif;
+  font-size: 16px;
   color: #848484;
+  padding: 20px;
 }
-footer .row .col-12 img{
-  padding-top: 90px;
-  padding-bottom: 20px;
-}
-footer .row .col-12 .about{
-  font-size: 18px;
-  font-weight: 300px;
-  width: 100%;
-  margin: 0 auto;
-}
-footer .row .col-12{
-  font-size: 18px;
-  font-weight: 300;
-  padding-bottom: 20px;
-}
-footer .row .col-12 h5{
-  font-size: 19px;
+footer h5{
+  font-size: 17px;
   font-weight: 700;
+  line-height: 50px;
   color: black;
-  padding-top: 30px;
+  padding-top: 50px;
+
 }
-footer .row .col-12 a{
+footer a{
   text-decoration: none;
   color: #848484;
   display: block;
+  text-align: center;
+  line-height: 38px;
+}
+footer .row img{
+  width: 40px;
+  padding-bottom: 26px;
+}
+footer .row .about{
+  text-align: center;
+}
+footer .copyright{
+  padding: 50px 0;
+  font-size: 15px;
 }
 footer .socmeds{
-  margin-top: 74px;
-  border-top: 1px solid #C4C4C4;
-  height: 84px;
-  font-size: 18px;
-  line-height: 84px;
+  border-top: 0.5px solid #C4C4C4;
   text-align: center;
 }
 footer .socmeds a{
-  padding: 12px;
+  display: inline;
+  margin: 0 10px;
+  font-size: 20px;
+  line-height: 83px;
   color: black;
 }
 
@@ -201,20 +202,26 @@ footer .socmeds a{
     line-height: 5px;
     margin-bottom: 110px;
   }
-  footer .row .col-12 img{
-    padding-bottom: 25px;
+  footer{
+    font-size: 18px;
   }
-  footer .row .col-12 .about{
-    width: 300px;
+  footer h5{
+    font-size: 18px;
+    text-align: center;
   }
-  footer .socmeds{
-    font-size: 24px;
+  footer .row{
+    padding-top: 76px;
+    width: 600px;
+    margin: 0 auto;
+  }
+  footer .row img{
+    text-align: left;
   }
   footer .socmeds a{
-    padding: 17.5px;
+    margin: 0 17.5px;
+    font-size: 24px;
   }
 }
-
 
 @media(min-width: 992px){
   .profile form .col-12 button{
@@ -231,30 +238,25 @@ footer .socmeds a{
     margin-bottom: 134px;
   }
   footer{
-    padding: 76px 109px 0 109px;
-    text-align: left;
+    position: relative;
+    padding: 0 90px;
+    text-align: justify;
+  }
+  footer h5{
+    padding-top: 0;
+  }
+  footer .row{
     width: 100%;
   }
-  footer .row .col-12{
-    padding-top: 0;
-    margin-top: 0;
-    margin-right: 2%;
-  }
-  footer .row .col-12 img{
-    padding-top: 0;
-    padding-bottom: 40px;
-    text-align: left;
-  }
-  footer .row .col-12 .about{
-    margin-left:0;
-    text-align: justify;
-    width: 300px;
-  }
-  footer .row .space{
-    width: 50px;
-  }
   footer .copyright{
-    position: relative;
-    bottom: 30px;
+    position: absolute;
+    bottom: 23%;
+  }
+  footer .row .about{
+    width: 300px;
+    text-align: justify;
+  }
+  footer .socmeds{
+    margin-top: 74px;
   }
 }

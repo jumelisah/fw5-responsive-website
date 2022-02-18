@@ -8,7 +8,7 @@
     "dev": "serve"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jumelisah",
   "license": "ISC",
   "devDependencies": {
     "serve": "^13.0.2"
