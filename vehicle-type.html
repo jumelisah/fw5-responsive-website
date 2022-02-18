@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vehicle Type | Vehicle Rent</title>
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!--Fontawesome-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!--CSS-->
+  <link rel="stylesheet" href="./assets/vehicle-type.css">
+</head>
+<body>
+  <div class="header-space"></div>
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="a.html"><img src="./assets/images/logo.png"></a>
+    <button class="navbar-toggler ms-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="vehicle-type.html">Vehicle Type</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">History</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+      </ul>
+      <div class="d-flex justify-content-center">
+        <div class="p-2 bd-highlight">
+          <div class="messages">
+            <a href="#" class="msg">
+              <div class="msg-sum">1</div>
+              <img class="msg-icon" src="./assets/images/email 2.png">
+            </a>
+          </div>
+        </div>
+        <div class="p-2 bd-highlight">
+          <a class="profile-link" href="#"><img class="rounded-circle img-profile" alt="profile" src="./assets/images/image-profile.png"></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="header-space-two"></div>
+
+  <section>
+    <form class="position-relative">
+      <input type="text" name="vehicle" placeholder="Search vehicle (ex. cars, cars name)">
+      <button class="position-absolute"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+    <div class="popular-section">
+      <div class="popular-vehicles">
+        <h1>Popular in town</h1>
+        <div class="vehicles d-flex flex-wrap justify-content-center">
+          <div class="popular-vehicle p-2 position-relative">
+            <a href="#">
+              <img src="./assets/images/popular-merapi.png">
+              <div class="location position-absolute">
+                <h6>Merapi</h6>
+                <p>Yogyakarta</p>
+              </div>
+            </a>
+          </div>
+          <div class="popular-vehicle p-2 position-relative">
+            <a href="#">
+              <img src="./assets/images/popular-teluk-bogam.png">
+              <div class="location position-absolute">
+                <h6>Teluk Bogam</h6>
+                <p>Kalimantan</p>
+              </div>
+            </a>
+          </div>
+          <div class="popular-vehicle p-2 position-relative">
+            <a href="#">
+              <img src="./assets/images/popular-bromo.png">
+              <div class="location position-absolute">
+                <h6>Bromo</h6>
+                <p>Malang</p>
+              </div>
+            </a>
+          </div>
+          <div class="popular-vehicle p-2 position-relative">
+            <a href="#">
+              <img src="./assets/images/popular-malioboro.png">
+              <div class="location position-absolute">
+                <h6>Malioboro</h6>
+                <p>Yogyakarta</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="popular-cars">
+        <h1>Cars</h1>
+        <div class="vehicles d-flex flex-wrap justify-content-center">
+          <div class="popular-vehicle p-2 position-relative">
+            <a href="#">
+              <img src="./assets/images/popular-merapi.png">
+              <div class="location position-absolute">
+                <h6>Merapi</h6>
+                <p>Yogyakarta</p>
+              </div>
+            </a>
+          </div>
+          <div class="popular-vehicle p-2 position-relative">
+            <a href="#">
+              <img src="./assets/images/popular-south-jakarta.png">
+              <div class="location position-absolute">
+                <h6>Lamborghini</h6>
+                <p>South Jakarta</p>
+              </div>
+            </a>
+          </div>
+          <div class="popular-vehicle p-2 position-relative">
+            <a href="#">
+              <img src="./assets/images/popular-bromo.png">
+              <div class="location position-absolute">
+                <h6>Jeep</h6>
+                <p>Malang</p>
+              </div>
+            </a>
+          </div>
+          <div class="popular-vehicle p-2 position-relative">
+            <a href="#">
+              <img src="./assets/images/popular-kalimantan.png">
+              <div class="location position-absolute">
+                <h6>White Jeep</h6>
+                <p>Kalimantan</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="popular-motorbike">
+        <h1>Motorbike</h1>
+        <div class="vehicles d-flex flex-wrap justify-content-center">
+          <div class="popular-vehicle p-2 position-relative">
+            <a href="#">
+              <img src="./assets/images/popular-vespa-yogya.png">
+              <div class="location position-absolute">
+                <h6>Vespa</h6>
+                <p>Yogyakarta</p>
+              </div>
+            </a>
+          </div>
+          <div class="popular-vehicle p-2 position-relative">
+            <a href="#">
+              <img src="./assets/images/popular-teluk-bogam.png">
+              <div class="location position-absolute">
+                <h6>Honda KLX</h6>
+                <p>Kalimantan</p>
+              </div>
+            </a>
+          </div>
+          <div class="popular-vehicle p-2 position-relative">
+            <a href="#">
+              <img src="./assets/images/popular-honda.png">
+              <div class="location position-absolute">
+                <h6>Honda</h6>
+                <p>Malang</p>
+              </div>
+            </a>
+          </div>
+          <div class="popular-vehicle p-2 position-relative">
+            <a href="#">
+              <img src="./assets/images/popular-malioboro.png">
+              <div class="location position-absolute">
+                <h6>Matic Bike</h6>
+                <p>Yogyakarta</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="popular-bike">
+        <h1>Bike</h1>
+        <div class="vehicles d-flex flex-wrap justify-content-center">
+          <div class="popular-vehicle p-2 position-relative">
+            <a href="#">
+              <img src="./assets/images/popular-bike-fixie.png">
+              <div class="location position-absolute">
+                <h6>Fixie</h6>
+                <p>Yogyakarta</p>
+              </div>
+            </a>
+          </div>
+          <div class="popular-vehicle p-2 position-relative">
+            <a href="#">
+              <img src="./assets/images/popular-sport-bike.png">
+              <div class="location position-absolute">
+                <h6>Sport Bike</h6>
+                <p>Kalimantan</p>
+              </div>
+            </a>
+          </div>
+          <div class="popular-vehicle p-2 position-relative">
+            <a href="#">
+              <img src="./assets/images/popular-onthel.png">
+              <div class="location position-absolute">
+                <h6>Onthel</h6>
+                <p>Malang</p>
+              </div>
+            </a>
+          </div>
+          <div class="popular-vehicle p-2 position-relative">
+            <a href="#">
+              <img src="./assets/images/popular-fixie-gray.png">
+              <div class="location position-absolute">
+                <h6>Fixie Gray</h6>
+                <p>Yogyakarta</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="row">
+      <div class="col-12 col-lg-5">
+        <img src="./assets/images/logo.png">
+        <div class="about">Plan and book your perfect trip with 
+          expert advice, travel tips for vehicle
+          information from us
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-2">
+        <div class="destinations">
+          <h5>Destinations</h5>
+          <a href="#">Bali</a>
+          <a href="#">Yogyakarta</a>
+          <a href="#">Jakarta</a>
+          <a href="#">Kalimantan</a>
+          <a href="#">Malang</a>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-2">
+        <div class="vehicles">
+          <h5>Vehicles</h5>
+          <a href="#">Bike</a>
+          <a href="#">Cars</a>
+          <a href="#">Motorbike</a>
+          <a href="#">Return Times</a>
+          <a href="#">FAQs</a>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3">
+        <div class="interests">
+          <h5>Interests</h5>
+          <a href="#">Adventure Travel</a>
+          <a href="#">Art and Culture</a>
+          <a href="#">Wildlife and Nature</a>
+          <a href="#">Family Holidays</a>
+          <a href="#">Culinary Trip</a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">©2020 Vehicle Rental Center. All rights reserved</div>
+    <div class="socmeds">
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
