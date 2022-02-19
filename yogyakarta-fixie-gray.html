@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixie Gray - Detail | Seran - Vehicle Rent</title>
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!--Fontawesome-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!--CSS-->
+  <link rel="stylesheet" href="./assets/detail.css">
+</head>
+<body>
+  <section>
+    <div class="back-arrow">
+      <a href="popular-in-town.html" class="d-inline-flex justify-content-start">
+        <i class="fa-solid fa-chevron-left sm-me-2 me-5"></i>
+        <p>Detail</p>
+      </a>
+    </div>
+    <div class="vehicle">
+      <div class="vehicle-details d-flex flex-wrap position-relative">
+        <div class="vehicle-image p-3">
+          <div class="main-image">
+            <img src="./assets/images/fixie-gray-detail.png">
+          </div>
+          <div class="other-images px-5 my-3 position-relative">
+            <div class="these-img d-flex">
+              <img class="p-2" src="./assets/images/dt-vehicle-1.png">
+              <img class="p-2" src="./assets/images/dt-vehicle-2.png">
+            </div>
+            <div class="arrow position-absolute top-50 start-0 translate-middle">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="arrow position-absolute top-50 start-100 translate-middle">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+        <div class="description">
+          <div class="details p-3 position-relative">
+            <div class="city">
+              <h2>Fixie - Gray Only</h2>
+              <h3>Yogyakarta</h3>
+            </div>
+            <h4>Available</h4>
+            <p>No prepayment</p>
+            <div class="about">
+              <p>Capacity : 1 person</p>
+              <p>Type : Bike</p>
+              <p>Reservation before 2 PM</p>
+              </p>
+            </div>
+            <div class="price position-absolute">Rp.78.000/day</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <form class="position-relative">
+      <div class="quantity d-flex justify-content-center align-items-center">
+        <a href="#" class="btn btn-plus">+</a>
+        <input type="number" name="qty" value="2">
+        <a href="#" class="btn btn-minus">-</a>
+      </div>
+      <div class="button d-flex flex-wrap justify-content-center">
+        <div class="button-chat">
+          <a href="#" class="btn btn-primary chat my-2" role="button">Chat Admin</a>
+        </div>
+        <div class="submit-button my-2">
+          <button>Reservation</button>
+        </div>
+        <div class="button-like">
+          <a href="#" class="btn btn-primary like my-2" role="button"
+          ><i class="fa-solid fa-heart"></i>Like</a>
+        </div>
+      </div>
+    </form>
+  </section>
+</body>
+</html>

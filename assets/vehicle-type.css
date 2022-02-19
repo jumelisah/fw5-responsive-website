@@ -123,6 +123,13 @@ section .popular-section h1{
 .popular-section .other-vehicles .fa-angle-right{
   padding-left: 11px;
 }
+.popular-vehicles .notes p{
+  padding-top: 23px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #B8BECD;
+}
 
 footer{
   background-color: #F9F9FB;
@@ -191,6 +198,10 @@ footer .socmeds a{
   .popular-section .vehicles .popular-vehicle{
     width: 50%;
   }
+  .popular-vehicles .notes p{
+    font-size: 24px;
+    line-height: 50px;
+  }
 
   footer{
     font-size: 18px;
@@ -246,6 +257,9 @@ footer .socmeds a{
   }
   .popular-section .vehicles .popular-vehicle{
     width:25%;
+  }
+  .popular-vehicles .title h1{
+    font-size: 48px;
   }
   
   footer{

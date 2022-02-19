@@ -17,6 +17,9 @@ body{
   font-size: 16px;
   background-color: white;
 }
+nav .navbar-brand img{
+  width: 40px;
+}
 .navbar-toggler{
   color: #1572A1;
 }
