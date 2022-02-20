@@ -58,76 +58,65 @@
             <option value="3">Malang</option>
           </select>
           <div class="form-space"></div>
-          <select class="form-selected" name="date">
-            <option selected>Date</option>
-            <option value="1">January</option>
-            <option value="2">February</option>
-            <option value="3">March</option>
-            <option value="4">April</option>
-            <option value="5">May</option>
-            <option value="6">June</option>
-            <option value="7">July</option>
-            <option value="8">August</option>
-            <option value="9">September</option>
-            <option value="10">October</option>
-            <option value="11">Nopember</option>
-            <option value="12">December</option>
-          </select>
+          <input class="input-date" type="date">
         </div>
         <button class="search">Search</button>
       </form>
     </div>
   </div>
-  <div class="bottom-wrapper">
+  <section>
     <div class="popular-section">
-      <h2>Popular in town</h2>
-      <div class="row">
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="image">
-            <img class="popular-img" src="./assets/images/popular-merapi.png">
-          </div>
-          <div class="place">
-            <h5>Merapi</h5>
-            <p>Yogyakarta</p>
+      <div class="popular-vehicles">
+        <div class="sub-title d-flex flex-wrap">
+          <h1>Popular in town</h1>
+          <div class="other-vehicles ms-auto">
+            <a href="popular-in-town.html">View all <i class="fa-solid fa-angle-right"></i></a>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="image">
-            <img class="popular-img" src="./assets/images/popular-teluk-bogam.png">
+        <div class="vehicles d-flex flex-wrap justify-content-center">
+          <div class="popular-vehicle p-2 position-relative">
+            <a href="#">
+              <img src="./assets/images/popular-merapi.png">
+              <div class="location position-absolute">
+                <h6>Merapi</h6>
+                <p>Yogyakarta</p>
+              </div>
+            </a>
           </div>
-          <div class="place">
-            <h5>Teluk Bogam</h5>
-            <p>Kalimantan</p>
+          <div class="popular-vehicle p-2 position-relative">
+            <a href="#">
+              <img src="./assets/images/popular-teluk-bogam.png">
+              <div class="location position-absolute">
+                <h6>Teluk Bogam</h6>
+                <p>Kalimantan</p>
+              </div>
+            </a>
           </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="image">
-            <img class="popular-img" src="./assets/images/popular-bromo.png">
+          <div class="popular-vehicle p-2 position-relative">
+            <a href="#">
+              <img src="./assets/images/popular-bromo.png">
+              <div class="location position-absolute">
+                <h6>Bromo</h6>
+                <p>Malang</p>
+              </div>
+            </a>
           </div>
-          <div class="place">
-            <h5>Bromo</h5>
-            <p>Malang</p>
+          <div class="popular-vehicle p-2 position-relative">
+            <a href="#">
+              <img src="./assets/images/popular-malioboro.png">
+              <div class="location position-absolute">
+                <h6>Malioboro</h6>
+                <p>Yogyakarta</p>
+              </div>
+            </a>
           </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="image">
-            <img class="popular-img" src="./assets/images/popular-malioboro.png">
-          </div>
-          <div class="place">
-            <h5>Malioboro</h5>
-            <p>Yogyakarta</p>
-          </div>
-          <div class="circle"><i class="fa-solid fa-angle-right"></i></div>
         </div>
       </div>
-      </div>
-      <div class="popular-1"></div>
-    </div>
     <div class="testimonial-section">
       <h2>Testimonials</h2>
       <div class="testimony">
-        <div class="message">
-          <div class="user-testimony">
+        <div class="message d-flex flex-wrap">
+          <div class="user-testimony p-3">
             <div class="star">
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -139,13 +128,13 @@
             <h6>Edward Newgate</h6>
             <p>Founder Circle</p>
           </div>
-          <div class="user">
+          <div class="user p-3">
             <img class="user-image" src="./assets/images/edward-testimony.png">
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
   <footer>
     <div class="row">
       <div class="col-12 col-lg-5">
