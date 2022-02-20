@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap');
+
+body{
+  font-family: 'Nunito', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+.navbar{
+  position: sticky;
+  top:0;
+  z-index: 999;
+  padding: 10px 20px;
+  width:100%;
+  font-size: 16px;
+  background-color: white;
+}
+nav ul li{
+  text-align: center;
+}
+nav .collapse ul li a{
+  color: #B8BECD;
+}
+nav .collapse ul li a:hover{
+  color: #1572A1;
+}
+nav .collapse ul .active a{
+  color: black
+}
+nav .messages{
+  width: 40px;
+  position: relative;
+  margin: 5px;
+
+}
+nav .messages .msg-sum{
+  background-color: #9AD0EC;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  justify-content: center;
+  text-align: center;
+  font-size: 12px;
+  position: absolute;
+  top: -8px;
+  left: -8px;
+}
+nav .img-profile{
+  width: 40px;
+  margin-left: 20px;
+}
+.navbar-brand img{
+  width: 40px;
+}
+.wrapper{
+  margin: 20px;
+}
+.history-section{
+  margin: 20px;
+}
+.history-section form{
+  margin-bottom: 50px;
+}
+form input{
+  font-size: 18px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: rgba(239, 218, 215, 0.3);
+  border: 0.5px solid #EFDAD7;
+  border-radius: 10px;
+  height: 40px;
+  width: 100%;
+}
+::-webkit-input-placeholder{
+  color: #81858f;
+}
+form .btn{
+  background-color: rgba(239, 218, 215, 0.3);
+  border: 0.5px solid #EFDAD7;
+  outline: none;
+  width: 120px;
+  height: 40px;
+  color: #81858f;
+}
+form .btn:hover{
+  background-color: rgba(239, 218, 215, 0.3);
+  border: 0.5px solid #EFDAD7;
+  outline: none;
+  color: #81858f;
+}
+form .dropdown button{
+  font-size: 18px;
+}
+form .dropdown ul{
+  background-color: white;
+  text-align: center;
+  width: 200px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 10px;
+}
+form .dropdown ul li{
+  border-bottom: 1px solid #DADADA;
+  width: 150px;
+  margin: 0 auto;
+  line-height: 36px;
+  font-size: 12px;
+  font-weight: bold;
+}
+form .dropdown ul .favorite{
+  border: none;
+}
+form .dropdown ul button{
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  outline: none;
+}
+form button{
+  font-size: 22px;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  top: 0;
+  right: 10px;
+  line-height: 40px;
+}
+.selection .select-all{
+  top: 0;
+  left: 0;
+  font-size: 18px;
+  text-align: left;
+  width: 50px;
+}
+.selection .select-all label{
+  margin: 0;
+  padding: 0;
+}
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  border: 1px solid #B8BECD;
+  border-radius: 10px;
+}
+.container:hover input, .checkmark:hover {
+  background-color: #EFDAD7;
+}
+.container input:checked ~ .checkmark {
+  background-color: #E3BEC6;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.notification .history{
+  top: 0;
+  left: -10px;
+  transform: translateY(-50%);
+}
+.notification .notif, .vehicles .rent-details, .vehicles img{
+  margin-left: 40px;
+}
+.vehicles h6{
+  font-weight: 700;
+}
+.payment-status p{
+  color: #9AD0EC;
+}
+.vehicles img{
+  width: 70%;
+}
+.vehicles .rent-details{
+  margin-top: 20px;
+  width: 100%;
+}
+.notification h5{
+  font-weight: 600;
+  color: #C4C4C4;
+  margin: 30px 0 20px 0;
+}
+.notification .today-section{
+  margin-top: 120px;
+}
+.today-section .notif-arrow{
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+.today-section .select p{
+  width: 60%;
+}
+.history-section .delete-button button{
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background-color: #9AD0EC;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.history-section .delete-button button:hover{
+  background-color: #1572A1;
+  color: white;
+}
+
+.new-arrival-section{
+  border: 1px solid #DADADA;
+  border-radius: 10px;
+  padding: 50px 0;
+  width: 100%;
+}
+.new-arrival-section h1{
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.new-arrival-section .new-vehicles{
+  width:100%;
+}
+.new-vehicles .vehicle-images{
+  margin-bottom: 40px;
+  width: 80%;
+}
+.new-arrival-section .new-vehicles .vehicle-images img{
+  width:100%;
+}
+.vehicle-images .location{
+  padding-top: 11px;
+  bottom: -15px;
+  background-color: white;
+  width: 120px;
+  line-height: 25px;
+  font-size: 17px;
+  color: black;
+  border-radius: 0 6px;
+}
+.new-arrival-section .another-vehicle{
+  margin: 0 auto;
+  text-align: center;
+  width: 80px;
+}
+.another-vehicle a{
+  font-size: 16px;
+  color: #81858f;
+}
+.another-vehicle a .fa-chevron-down{
+  font-size: 30px;
+  color: black;
+}
+
+footer{
+  background-color: #F9F9FB;
+  text-align: center;
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+  color: #848484;
+  padding: 20px;
+  margin-top: 900px;
+}
+footer img{
+  width: 40px;
+}
+footer h5{
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 50px;
+  color: black;
+  padding-top: 50px;
+
+}
+footer a{
+  text-decoration: none;
+  color: #848484;
+  display: block;
+  text-align: center;
+  line-height: 38px;
+}
+footer .row img{
+  width: 40px;
+  padding-bottom: 26px;
+}
+footer .row .about{
+  text-align: center;
+}
+footer .copyright{
+  padding: 50px 0;
+  font-size: 15px;
+}
+footer .socmeds{
+  border-top: 0.5px solid #C4C4C4;
+  text-align: center;
+}
+footer .socmeds a{
+  display: inline;
+  margin: 0 10px;
+  font-size: 20px;
+  line-height: 83px;
+  color: black;
+}
+
+@media(min-width: 768px){
+  .navbar{
+    padding: 10px 40px;
+  }
+  nav .messages{
+    margin: 8px;
+  }
+  nav .img-profile{
+    width: 50px;
+    margin-left: 27px;
+  }
+
+  .wrapper{
+    margin: 40px;
+  }
+  form input{
+    font-size: 22px;
+    padding: 20px;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+  form .btn{
+    height: 50px;
+    width: 157px;
+  }
+  form .dropdown ul{
+    width: 257px;
+  }
+  form .dropdown ul li{
+    line-height: 40px;
+    font-size: 14px;
+  }
+  form .dropdown button{
+    font-size: 22px;
+  }
+  form button{
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .selection .select-all{
+    top: -100px;
+    left: 90%;
+    font-size: 22px;
+    width: 40px;
+    text-align: right;
+  }
+  .notification h5{
+    margin: 50px 0 20px 0;
+    font-size: 22px;
+  }
+  .notification .today-section{
+    margin-top: 45px;
+  }
+  .notification .history{
+    left: 95%;
+  }
+  .notification .week-section .history{
+    top: 50%;
+  }
+  .notification .notif, .vehicles .rent-details, .vehicles img{
+    margin-left: 0;
+  }
+  .today-section .notif-arrow{
+    right: 30%;
+  }
+  .vehicles .rent-details{
+    padding-left: 30px;
+  }
+  .today-section .select p{
+    width: 100%;
+  }
+  .vehicles img{
+    width: 50%;
+  }
+  .vehicles .rent-details{
+    width: 50%;
+  }
+  .week-section .select{
+    margin-bottom: 30px;
+  }
+  .history-section .delete-button button{
+    height: 70px;
+    font-size: 22px;
+  }
+  .new-arrival-section{
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .new-arrival-section h1{
+    text-align: center;
+  }
+  .new-vehicles .vehicle-images{
+    width:50%;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  .new-vehicles .vehicle-images img{
+    width: 100%;
+  }
+  .new-arrival-section .another-vehicle{
+    width: 90px;
+    margin-top: 30px;
+  }
+  .another-vehicle a{
+    font-size: 18px;
+  }
+  .another-vehicle a .fa-chevron-down{
+    font-size: 40px;
+  }
+
+  footer{
+    font-size: 18px;
+  }
+  footer h5{
+    font-size: 18px;
+    text-align: center;
+  }
+  footer .row{
+    padding-top: 76px;
+    width: 600px;
+    margin: 0 auto;
+  }
+  footer .row img{
+    text-align: left;
+  }
+  footer .socmeds a{
+    margin: 0 17.5px;
+    font-size: 24px;
+  }
+}
+
+@media(min-width: 992px){
+  .header-space{
+    height: 60px;
+  }
+  .header-space-two{
+    height: 30px
+  }
+  .navbar{
+    padding: 10px 123px;
+  }
+  nav ul li{
+    margin: 0 15px;
+  }
+  nav .messages{
+    margin: 10px;
+  }
+  nav .img-profile{
+    width: 54px;
+    margin-left: 30px;
+  }
+
+  .wrapper{
+    margin: 0 90px;
+  }
+  form{
+    width: 100%;
+  }
+  form input{
+    font-size: 24px;
+    height: 75px;
+    margin-bottom: 25px;
+  }
+  form .dropdown ul li{
+    line-height: 54px;
+  }
+  form .dropdown button{
+    font-size: 24px;
+  }
+  form button{
+    line-height: 75px;
+  }
+  form .btn{
+    height: 75px;
+  }
+  .history-section{
+    width: 60%;
+  }
+  .today-section .notif-arrow{
+    right: 10%;
+  }
+  .history-section .delete-button button{
+    height: 90px;
+    font-size: 24px;
+    margin-top: 50px
+  }
+  .new-arrival-section{
+    top: 0;
+    left: 85%;
+    width: 30%;
+  }
+  .new-vehicles .vehicle-images{
+    width: 100%;
+    padding: 30px;
+  }
+  
+  footer{
+    margin-top: 0;
+    position: relative;
+    padding: 0 90px;
+    text-align: justify;
+  }
+  footer h5{
+    padding-top: 0;
+  }
+  footer .row{
+    width: 100%;
+  }
+  footer .copyright{
+    position: absolute;
+    bottom: 23%;
+  }
+  footer .row .about{
+    width: 300px;
+    text-align: justify;
+  }
+  footer .socmeds{
+    margin-top: 74px;
+  }
+
+}
+@media(min-width: 1200px){
+  .wrapper{
+    margin: 0 123px;
+  }
+}

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>History | Seran - Vehicle Rent</title>
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!--Fontawesome-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!--CSS-->
+  <link rel="stylesheet" href="./assets/history.css">
+</head>
+<body>
+  <div class="header-space"></div>
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="a.html"><img src="./assets/images/logo.png"></a>
+    <button class="navbar-toggler ms-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="vehicle-type.html">Vehicle Type</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">History</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+      </ul>
+      <div class="d-flex justify-content-center">
+        <div class="p-2 bd-highlight">
+          <div class="messages">
+            <a href="#" class="msg">
+              <div class="msg-sum">1</div>
+              <img class="msg-icon" src="./assets/images/email 2.png">
+            </a>
+          </div>
+        </div>
+        <div class="p-2 bd-highlight">
+          <a class="profile-link" href="#"><img class="rounded-circle img-profile" alt="profile" src="./assets/images/image-profile.png"></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="header-space-two"></div>
+  
+  <div class="wrapper position-relative">
+    <div class="history-section me-2">
+      <form class="position-relative">
+        <input type="text" name="search" placeholder="Search History">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Filter</button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><button name="filter" type="submit" value="type">Type</button></li>
+            <li><button name="filter" type="submit" value="data-added">Data Added</button></li>
+            <li><button name="filter" type="submit" value="name">Name</button></li>
+            <li class="favorite"><button name="filter" type="submit" value="favorite">Favorite Product</button></li>
+          </ul>
+        </div>
+        <button class="position-absolute"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+      <div class="selection position-relative">
+        <div class="select-all position-absolute">
+          <label class="container">Delete
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+      </div>
+      <div class="notification">
+        <div class="today-section">
+          <h5>Today</h5>
+          <div class="select position-relative">
+            <div class="notif position-relative">
+              <p>Please finish your payment for vespa for Vespa Rental Jogja</p>
+              <div class="notif-arrow position-absolute">
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </div>
+            <div class="history position-absolute">
+              <label class="container">
+                <input type="checkbox" name="history-1">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+          <div class="select position-relative">
+            <div class="notif position-relative">
+              <p>Your payment has been confirmed!</p>
+              <div class="notif-arrow position-absolute">
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </div>
+            <div class="history position-absolute">
+              <label class="container">
+                <input type="checkbox" name="history-2">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="week-section">
+          <h5>A week ago</h5>
+          <div class="select position-relative">
+            <div class="history position-absolute">
+              <label class="container">
+                <input type="checkbox" name="history-3">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="vehicles d-flex flex-wrap">
+              <img src="./assets/images/history-1.png">
+              <div class="rent-details">
+                <div class="date-detai">
+                  <h6>Vespa Matic</h6>
+                  <p>Jan 18 to 21 2021</p>
+                </div>
+                <div class="payment-status">
+                  <h6>Prepayment: Rp.245.000</h6>
+                  <p>Has been returned</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="select position-relative">
+            <div class="history position-absolute">
+              <label class="container">
+                <input type="checkbox" name="history-4">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="vehicles d-flex flex-wrap">
+              <img src="./assets/images/history-2.png">
+              <div class="rent-details">
+                <div class="date-detai">
+                  <h6>Vespa Matic</h6>
+                  <p>Jan 18 to 21 2021</p>
+                </div>
+                <div class="payment-status">
+                  <h6>Prepayment: Rp.245.000</h6>
+                  <p>Has been returned</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="delete-button">
+        <button>Delete selected item</button>
+      </div>
+    </div>
+    <div class="new-arrival-section position-absolute">
+      <h1>New Arrival</h1>
+      <div class="new-vehicles d-flex flex-wrap justify-content-center">
+        <div class="vehicle-images position-relative">
+          <img src="./assets/images/new-1.png">
+          <div class="location position-absolute">
+            <h6>Lamborghini</h6>
+            <p>South Jakarta</p>
+          </div>
+        </div>
+        <div class="vehicle-images position-relative">
+          <img src="./assets/images/new-2.png">
+          <div class="location position-absolute">
+            <h6>White Jeep</h6>
+            <p>Kalimantan</p>
+          </div>
+        </div>
+      </div>
+      <div class="another-vehicle">
+        <a href="#">View more<i class="fa-solid fa-chevron-down"></i></a>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <div class="row">
+      <div class="col-12 col-lg-5">
+        <img src="./assets/images/logo.png">
+        <div class="about">Plan and book your perfect trip with 
+          expert advice, travel tips for vehicle
+          information from us
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-2">
+        <div class="destinations">
+          <h5>Destinations</h5>
+          <a href="#">Bali</a>
+          <a href="#">Yogyakarta</a>
+          <a href="#">Jakarta</a>
+          <a href="#">Kalimantan</a>
+          <a href="#">Malang</a>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-2">
+        <div class="vehicles">
+          <h5>Vehicles</h5>
+          <a href="#">Bike</a>
+          <a href="#">Cars</a>
+          <a href="#">Motorbike</a>
+          <a href="#">Return Times</a>
+          <a href="#">FAQs</a>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3">
+        <div class="interests">
+          <h5>Interests</h5>
+          <a href="#">Adventure Travel</a>
+          <a href="#">Art and Culture</a>
+          <a href="#">Wildlife and Nature</a>
+          <a href="#">Family Holidays</a>
+          <a href="#">Culinary Trip</a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">©2020 Vehicle Rental Center. All rights reserved</div>
+    <div class="socmeds">
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
