@@ -19,6 +19,9 @@ font-family: 'Nunito', sans-serif;
   font-size: 16px;
   background-color: white;
 }
+.navbar-brand img{
+  width: 40px;
+}
 nav ul li{
   text-align: center;
 }
