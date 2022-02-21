@@ -8,6 +8,53 @@ body{
 a{
   text-decoration: none;
 }
+.navbar{
+  position: sticky;
+  top:0;
+  z-index: 999;
+  padding: 10px 20px;
+  width:100%;
+  font-size: 16px;
+  background-color: white;
+}
+.navbar-brand img{
+  width: 40px;
+}
+nav ul li{
+  text-align: center;
+}
+nav .collapse ul li a{
+  color: #B8BECD;
+}
+nav .collapse ul li a:hover{
+  color: #1572A1;
+}
+nav .collapse ul .active a{
+  color: black
+}
+nav .messages{
+  width: 40px;
+  position: relative;
+  margin: 5px;
+
+}
+nav .messages .msg-sum{
+  background-color: #9AD0EC;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  justify-content: center;
+  text-align: center;
+  font-size: 12px;
+  position: absolute;
+  top: -8px;
+  left: -8px;
+}
+nav .img-profile{
+  width: 40px;
+  margin-left: 20px;
+}
+
 section{
   margin: 50px 20px;
 }
@@ -114,8 +161,64 @@ form .reservation input{
   font-weight: 700;
 }
 
+footer{
+  background-color: #F9F9FB;
+  text-align: center;
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+  color: #848484;
+  padding: 20px;
+}
+footer h5{
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 50px;
+  color: black;
+  padding-top: 50px;
+
+}
+footer a{
+  text-decoration: none;
+  color: #848484;
+  display: block;
+  text-align: center;
+  line-height: 38px;
+}
+footer .row img{
+  width: 40px;
+  padding-bottom: 26px;
+}
+footer .row .about{
+  text-align: center;
+}
+footer .copyright{
+  padding: 50px 0;
+  font-size: 15px;
+}
+footer .socmeds{
+  border-top: 0.5px solid #C4C4C4;
+  text-align: center;
+}
+footer .socmeds a{
+  display: inline;
+  margin: 0 10px;
+  font-size: 20px;
+  line-height: 83px;
+  color: black;
+}
 
 @media(min-width: 768px){
+  .navbar{
+    padding: 10px 40px;
+  }
+  nav .messages{
+    margin: 8px;
+  }
+  nav .img-profile{
+    width: 50px;
+    margin-left: 27px;
+  }
+
   section{
     margin: 50px;
   }
@@ -183,10 +286,50 @@ form .reservation input{
   form .reservation{
     margin-top: 36px;
   }
+
+  footer{
+    font-size: 18px;
+  }
+  footer h5{
+    font-size: 18px;
+    text-align: center;
+  }
+  footer .row{
+    padding-top: 76px;
+    width: 600px;
+    margin: 0 auto;
+  }
+  footer .row img{
+    text-align: left;
+  }
+  footer .socmeds a{
+    margin: 0 17.5px;
+    font-size: 24px;
+  }
 }
 
 
 @media(min-width: 992px){
+  .header-space{
+    height: 60px;
+  }
+  .header-space-two{
+    height: 30px
+  }
+  .navbar{
+    padding: 10px 123px;
+  }
+  nav ul li{
+    margin: 0 15px;
+  }
+  nav .messages{
+    margin: 10px;
+  }
+  nav .img-profile{
+    width: 54px;
+    margin-left: 30px;
+  }
+
   section{
     margin: 57px 123px 102px 123px;
   }
@@ -233,6 +376,47 @@ form .reservation input{
   form .reservation input{
     height: 89px;
     font-size: 24px;
+  }
+  
+  footer{
+    position: relative;
+    padding: 0 90px;
+    text-align: justify;
+  }
+  footer h5{
+    padding-top: 0;
+  }
+  footer .row{
+    width: 100%;
+  }
+  footer .copyright{
+    position: absolute;
+    bottom: 23%;
+  }
+  footer .row .about{
+    width: 300px;
+    text-align: justify;
+  }
+  footer .socmeds{
+    margin-top: 74px;
+  }
+}
+
+@media(min-width: 1200px){
+  .vehicle-details .details h2{
+    font-size: 48px;
+  }
+  .vehicle-details .details h3{
+    font-size: 36px;
+  }
+  .vehicle-details .details h4, .vehicle-details .details p{
+    font-size: 24px;
+  }
+  .vehicle-details .price{
+    font-size: 36px;
+  }
+  .other-images .arrow{
+    font-size: 36px;
   }
 }
 

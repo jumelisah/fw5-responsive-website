@@ -72,11 +72,17 @@
       </div>
     </div>
     <form>
-      <div class="input-gender">
-        <input type="radio" id="gender" name="gender" value="male">
-        <label for="vehicle1">Male</label>
-        <input type="radio" id="gender" name="gender" value="female">
-        <label for="vehicle1">Female</label>
+      <div class="input-gender d-flex">
+        <div class="select">
+          <input type="radio" id="gender" name="gender" value="male">
+          <span class="checkmark"></span>
+          <label for="gender">Male</label>
+        </div>
+        <div class="select">
+          <input type="radio" id="gender" name="gender" value="female">
+          <label for="gender">Female</label>
+          <span class="checkmark"></span>
+        </div>
       </div>
       <h5>Contacts</h5>
       <div class="mb-1">
