@@ -7,118 +7,52 @@ li{
 body{
 font-family: 'Nunito', sans-serif;
 }
-.navbar{
-  position: sticky;
-  top:0;
-  z-index: 999;
-  padding: 10px 20px;
-  width:100%;
-  font-size: 16px;
-  background-color: white;
-}
-nav ul li{
-  text-align: center;
-}
-nav .collapse ul li a{
-  color: #B8BECD;
-}
-nav .collapse ul li a:hover{
-  color: #1572A1;
-}
-nav .collapse ul .active a{
-  color: black
-}
-nav .messages{
-  width: 40px;
-  position: relative;
-  margin: 5px;
-
-}
-nav .messages .msg-sum{
-  background-color: #E3BEC6;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  justify-content: center;
-  text-align: center;
-  font-size: 12px;
-  position: absolute;
-  top: -8px;
-  left: -8px;
-}
-nav .img-profile{
-  width: 40px;
-  margin-left: 20px;
-}
-.navbar img{
-  width: 40px;
-}
-.profile{
-  text-align: center;
-  padding: 10px;
-  margin: 86px 20px 0 20px;
-}
-.profile h1{
-  font-size: 36px;
-  line-height: 24px;
-  font-weight: 700;
-  margin-bottom: 46px;
-}
-.profile .user .user-set{
-  margin: 0 auto;
-}
-.profile .user .img-profile{
-  width: 200px;
-  border-radius: 50%;
-}
-.profile .user .user-set .change-profile{
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #E3BEC6;
-  position: relative;
-}
-.profile .user{
-  font-weight: 700;
-}
-.profile .user .user-name{
-  font-size: 30px;
-  margin: 30px 0 15px 0;
-}
-.profile .user .about-user{
-  height: 82px;
-  font-size: 16px;
-  line-height: 5px;
-  margin-bottom: 50px;
-}
-.profile form{
+main{
   width: 100%;
-  text-align: left;
+  padding: 20px;
 }
-.profile form h5{
-  padding-top: 30px;
+main h1{
+  margin-top: 30px;
+  font-size: 30px;
   font-weight: 700;
 }
-
-.input-gender{
+main .user-profile{
   width: 200px;
   margin: 0 auto;
 }
-.select label{
-  padding-left: 20px;
+.user-profile a{
+  color: black;
+  background-color: #9AD0EC;
+  border-radius: 50%;
 }
-.input-gender .select{
-  width: 50%;
+.user-profile a:hover{
+  color: white;
+  background-color: #1572A1;
 }
-.select input {
-  top: 0;
-  left: 0;
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
+.user-profile .edit-icon{
+  width: 50px;
+  height: 50px;
+  text-align: center;
 }
+.user-profile .edit-icon .fa-pencil{
+  font-size: 16px;
+}
+.identity-section{
+  text-align: center;
+}
+main .identity-section h1{
+  font-size: 36px;
+  font-family: 'Playfair Display', serif;
+}
+.contact-section p{
+  font-size: 20px;
+  font-weight: 700;
+  color: #838894;
+}
+.selection .select p{
+  margin: 0 20px;
+}
+
 .checkmark {
   position: absolute;
   height: 25px;
@@ -126,144 +60,144 @@ nav .img-profile{
   border: 1px solid #B8BECD;
   border-radius: 10px;
 }
-.container:hover input, .checkmark:hover {
-  background-color: #EFDAD7;
-}
-.container input:checked ~ .checkmark {
-  background-color: #E3BEC6;
-}
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-.container input:checked ~ .checkmark:after {
-  display: block;
-}
 
-.profile form .mb-1 input{
+.form-section{
+  max-width: 500px;
+  margin: 0 auto;
+}
+.form-section h2{
+  font-size: 18px;
+  font-weight: 900;
+  padding-top: 40px;
+}
+.form-section label{
+  font-size: 18px;
+  color:#838894;
+  padding: 18px 0 10px 0;
+}
+.form-section input{
+  font-size: 18px;
+  padding: 10px 0;
+  width: 100%;
   border: none;
+  border-bottom: 1px solid black;
+}
+.identity-section h2{
+  text-align: left;
+}
+.identity-section .input-identity{
+  width: 100%;
+}
+.input-identity{
+  text-align: left;
+}
+.form-button{
+  margin-top: 30px;
+}
+.form-button .btn{
+  width: 100%;
+  line-height: 50px;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  font-weight: 700;
+  padding: 0;
+}
+.form-button .btn:hover{
+  color: white
+}
+.form-button .btn-primary{
+  background-color: #9AD0EC;
+}
+.form-button .btn-primary:hover{
   background-color: #1572A1;
 }
-
-footer{
-  background-color: #F9F9FB;
-  text-align: center;
-  font-family: 'Mulish', sans-serif;
-  font-size: 16px;
-  color: #848484;
-  padding: 20px;
+.form-button .btn-secondary{
+  background-color: #EFDAD7;
 }
-footer h5{
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 50px;
-  color: black;
-  padding-top: 50px;
-
+.form-button .btn-secondary:hover{
+  background-color: #E3BEC6;
 }
-footer a{
-  text-decoration: none;
-  color: #848484;
-  display: block;
-  text-align: center;
-  line-height: 38px;
+.form-button .btn-light{
+  background-color: #cbcdd3;
 }
-footer .row img{
-  width: 40px;
-  padding-bottom: 26px;
-}
-footer .row .about{
-  text-align: center;
-}
-footer .copyright{
-  padding: 50px 0;
-  font-size: 15px;
-}
-footer .socmeds{
-  border-top: 0.5px solid #C4C4C4;
-  text-align: center;
-}
-footer .socmeds a{
-  display: inline;
-  margin: 0 10px;
-  font-size: 20px;
-  line-height: 83px;
-  color: black;
+.form-button .btn-light:hover{
+  background-color: #7b7d85;
 }
 
 @media(min-width: 768px){
-  .navbar{
-    padding: 10px 40px;
+  main{
+    padding: 0 40px;
   }
-  nav .messages{
-    margin: 8px;
+  main h1{
+    margin: 46px 0;
+    font-size: 33px;
   }
-  nav .img-profile{
-    width: 50px;
-    margin-left: 27px;
+  main .identity-section h1{
+    margin-top: 40px;
+    font-size: 40px;
   }
-  footer{
-    font-size: 18px;
+  .contact-section p{
+    font-size: 22px;
   }
-  footer h5{
-    font-size: 18px;
-    text-align: center;
+  .form-section{
+    max-width: 700px;
   }
-  footer .row{
-    padding-top: 76px;
-    width: 600px;
-    margin: 0 auto;
+  .form-section h2{
+    font-size: 20px;
   }
-  footer .row img{
-    text-align: left;
+  .form-section label{
+    font-size: 20px;
   }
-  footer .socmeds a{
-    margin: 0 17.5px;
-    font-size: 24px;
+  .form-section input{
+    font-size: 20px;
+    padding: 15px 0;
+  }
+  .identity-section .input-identity{
+    width: 50%;
+  }
+  .identity-section .part-1{
+    padding-right: 10px;
+  }
+  .identity-section .part-2{
+    padding-left: 10px;
+  }
+  .form-button .button{
+    width: 50%;
+  }
+  .form-button .btn{
+    font-size: 22px;
+    line-height: 60px;
   }
 }
 
 @media(min-width: 992px){
-  .header-space{
-    height: 60px;
+  main{
+    padding: 0 123px;
   }
-  .header-space-two{
-    height: 30px
+  main h1{
+    margin: 80px 0 46px 0;
+    font-size: 36px;
   }
-  .navbar{
-    padding: 10px 123px;
+  main .identity-section h1{
+    margin-top: 50px;
+    font-size: 48px;
   }
-  nav ul li{
-    margin: 0 15px;
+  .contact-section p{
+    font-size: 24px;
   }
-  nav .messages{
-    margin: 10px;
+  .form-section{
+    max-width: 1200px;
   }
-  nav .img-profile{
-    width: 54px;
-    margin-left: 30px;
+  .form-button{
+    margin: 100px 0;
   }
-  footer{
-    position: relative;
-    padding: 0 90px;
-    text-align: justify;
+  .form-button .button{
+    width: 33.33%;
   }
-  footer h5{
-    padding-top: 0;
-  }
-  footer .row{
-    width: 100%;
-  }
-  footer .copyright{
-    position: absolute;
-    bottom: 23%;
-  }
-  footer .row .about{
-    width: 300px;
-    text-align: justify;
-  }
-  footer .socmeds{
-    margin-top: 74px;
+  .form-button .btn{
+    font-size: 24px;
+    line-height: 70px;
+    max-width: 325px;
   }
 }
