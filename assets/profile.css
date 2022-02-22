@@ -94,6 +94,9 @@ main .identity-section h1{
 .form-button{
   margin-top: 30px;
 }
+.form-button .button{
+  width: 100%;
+}
 .form-button .btn{
   width: 100%;
   line-height: 50px;
