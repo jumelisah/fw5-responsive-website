@@ -372,6 +372,12 @@ footer .socmeds a{
   .navbar{
     background-color: white;
   }
+  .collapse ul li{
+    padding: 0 10px;
+  }
+  ul li .login{
+    margin-left: 30px;
+  }
   nav .btn{
     margin-right: 18px;
   }
