@@ -1,5 +1,5 @@
 # About
-This is repository of Responsive Website task for Fazztrack Bootcamp
+Seran-Vehicle Rent is a vehicle rental application
 
 # Preview
 ## Vehicle-Type Page
